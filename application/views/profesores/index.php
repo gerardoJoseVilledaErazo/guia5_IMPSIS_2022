@@ -25,7 +25,6 @@
                     <th>Email</th>
                     <th>Genero</th>
                     <th>Nombre</th>
-                    <th>Apellido</th>
                     <th>Fecha de nacimiento</th>
                     <th>Profesion</th>
                     <th>Acciones</th>
@@ -37,8 +36,7 @@
                         <td><?php echo $item->idprofesor; ?></td>
                         <td><?php echo $item->email; ?></td>
                         <td><?php echo $item->genero; ?></td>
-                        <td><?php echo $item->nombre; ?></td>
-                        <td><?php echo $item->apellido; ?></td>
+                        <td><?php echo $item->nombreCompleto; ?></td>
                         <td><?php echo $item->fecha_nacimiento; ?></td>
                         <td><?php echo $item->profesion; ?></td>
                         <td>

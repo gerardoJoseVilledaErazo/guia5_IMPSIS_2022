@@ -72,7 +72,7 @@
 
                                     <option value="<?= $item->idprofesor ?>" <?= isset($grupo) && $item->idprofesor == $grupo->idprofesor ? "selected='selected'" : ""; ?>>
 
-                                        <?= $item->apellido ?>
+                                        <?= $item->nombreCompleto ?>
 
                                     </option>
 

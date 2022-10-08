@@ -82,7 +82,7 @@ class Grupos extends CI_Controller
         $this->form_validation->set_rules(
             "anio", 
             "Año", 
-            "required|integer"
+            "required|integer|max_length[4]"
         );
         $this->form_validation->set_rules(
             "ciclo", 
@@ -97,7 +97,7 @@ class Grupos extends CI_Controller
         $this->form_validation->set_rules(
             "idprofesor", 
             "Profesor", 
-            "required|min_length[10]|max_length[10]"
+            "required|max_length[100]"
         );
 
         // Modificando el mensaje de validación para los errores
@@ -198,7 +198,7 @@ class Grupos extends CI_Controller
         $this->form_validation->set_rules(
             "anio", 
             "Año", 
-            "required|integer"
+            "required|integer|max_length[4]"
         );
         $this->form_validation->set_rules(
             "ciclo", 
@@ -213,7 +213,7 @@ class Grupos extends CI_Controller
         $this->form_validation->set_rules(
             "idprofesor", 
             "Profesor", 
-            "required|min_length[10]|max_length[10]"
+            "required|max_length[100]"
         );
 
         // Modificando el mensaje de validación para los errores, en este caso para

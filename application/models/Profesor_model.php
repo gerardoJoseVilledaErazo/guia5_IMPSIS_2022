@@ -12,7 +12,9 @@ class Profesor_model extends CI_Model
 
     public function getAll()
     {
-        $query = $this->db->get("profesores");
+        //$query = $this->db->get("profesores");
+        $query = $this->db->query("SELECT a.idprofesor, CONCAT(a.nombre, ' ', a.apellido) AS 'nombreCompleto',
+                                   a.fecha_nacimiento, a.profesion, a.genero, a.email FROM profesores a;");
         $records = $query->result();
         return $records;
     }

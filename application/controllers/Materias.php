@@ -70,7 +70,7 @@ class Materias extends CI_Controller
         $this->form_validation->set_rules(
             "materia",
             "Materia",
-            "required|min_length[3]|max_length[50]|alpha_numeric_spaces"
+            "required|min_length[3]|max_length[50]"
         );
 
         // Modificando el mensaje de validación para los errores
@@ -153,7 +153,7 @@ class Materias extends CI_Controller
         $this->form_validation->set_rules(
             "materia", 
             "Materia", 
-            "required|min_length[3]|max_length[50]|alpha_numeric_spaces");
+            "required|min_length[3]|max_length[50]");
 
         // Modificando el mensaje de validación para los errores, en este caso para
         // la regla required
