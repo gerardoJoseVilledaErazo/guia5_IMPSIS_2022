@@ -11,7 +11,7 @@
     <div class="ml-md-4 mr-md-4">
         <div class="title">
             <div class="col-12">
-                <h3><?php echo isset($grupo) ? "Modificar" : "Agregar"; ?></h3>
+                <h3><?php echo isset($grupo) ? "Modificar Grupos" : "Agregar Grupos"; ?></h3>
             </div>
         </div>
     </div>
@@ -82,7 +82,7 @@
                         <br>
                         <div class="form-group">
                             <input class="btn btn-success" type="submit" value="Guardar"> 
-                            <a class='btn btn-success' href="<?= site_url('grupos') ?>">Volver</a>
+                            <a class='btn btn-primary' href="<?= site_url('grupos') ?>">Volver</a>
                         </div>
                     </div>
 

@@ -40,8 +40,8 @@
                         <td><?php echo $item->apellido; ?></td>
                         <td><?php echo $item->carrera; ?></td>
                         <td>
-                            <a href="<?= site_url('estudiantes/modificar/' . $item->idestudiante) ?>">Modificar</a>
-                            <a href="<?= site_url('estudiantes/eliminar/' . $item->idestudiante) ?>" 
+                            <a class="btn btn-info d-block" href="<?= site_url('estudiantes/modificar/' . $item->idestudiante) ?>">Modificar</a>
+                            <a class="btn btn-danger d-block" href="<?= site_url('estudiantes/eliminar/' . $item->idestudiante) ?>" 
                             onclick="return confirm('¿Está seguro?')">Eliminar</a>
                         </td>
                     </tr>

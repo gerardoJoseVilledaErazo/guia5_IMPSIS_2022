@@ -90,6 +90,10 @@ class Materias extends CI_Controller
             'is_unique', 
             'El campo %s ya existe.'
         );
+        $this->form_validation->set_message(
+            'alpha', 
+            'El campo %s debe contener solo caracteres alfabeticos.'
+        );
 
         // Parámetros de respuesta
         header('Content-type: application/json');

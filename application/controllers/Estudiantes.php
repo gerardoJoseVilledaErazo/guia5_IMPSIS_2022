@@ -212,18 +212,31 @@ class Estudiantes extends CI_Controller
             "required|max_length[100]"
         );
 
-        // Modificando el mensaje de validación para los errores, en este caso para
-        // la regla required, min_length, max_length
-        $this->form_validation->set_message('required', 
-        'El campo %s es requerido.');
-        $this->form_validation->set_message('min_length', 
-        'El campo %s debe tener al menos %s caracteres.');
-        $this->form_validation->set_message('max_length', 
-        'El campo %s debe tener como máximo %s caracteres.');
-        $this->form_validation->set_message('is_unique', 
-        'El campo %s ya existe.');
-        $this->form_validation->set_message('alpha', 
-        'El campo %s debe contener solo caracteres alfabeticos.');
+        // Modificando el mensaje de validación para los errores, 
+        $this->form_validation->set_message(
+            'required', 
+            'El campo %s es requerido.'
+        );
+        $this->form_validation->set_message(
+            'min_length', 
+            'El campo %s debe tener al menos %s caracteres.'
+        );
+        $this->form_validation->set_message(
+            'max_length', 
+            'El campo %s debe tener como máximo %s caracteres.'
+        );
+        $this->form_validation->set_message(
+            'valid_email', 
+            'El campo %s no es un correo válido.'
+        );
+        $this->form_validation->set_message(
+            'is_unique', 
+            'El campo %s ya existe.'
+        );
+        $this->form_validation->set_message(
+            'alpha', 
+            'El campo %s debe contener solo caracteres alfabeticos.'
+        );
 
         // Parámetros de respuesta
         header('Content-type: application/json');

@@ -40,8 +40,8 @@
                         <td><?php echo $item->fecha_nacimiento; ?></td>
                         <td><?php echo $item->profesion; ?></td>
                         <td>
-                            <a href="<?= site_url('profesores/modificar/' . $item->idprofesor) ?>">Modificar</a>
-                            <a href="<?= site_url('profesores/eliminar/' . $item->idprofesor) ?>" 
+                            <a class="btn btn-info d-block" href="<?= site_url('profesores/modificar/' . $item->idprofesor) ?>">Modificar</a>
+                            <a class="btn btn-danger d-block" href="<?= site_url('profesores/eliminar/' . $item->idprofesor) ?>" 
                             onclick="return confirm('¿Está seguro?')">Eliminar</a>
                         </td>
                     </tr>

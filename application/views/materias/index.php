@@ -32,8 +32,8 @@
                         <td><?php echo $item->idmateria; ?></td>
                         <td><?php echo $item->materia; ?></td>
                         <td>
-                            <a href="<?= site_url('materias/modificar/' . $item->idmateria) ?>">Modificar</a>
-                            <a href="<?= site_url('materias/eliminar/' . $item->idmateria) ?>" 
+                            <a class="btn btn-info d-block" href="<?= site_url('materias/modificar/' . $item->idmateria) ?>">Modificar</a>
+                            <a class="btn btn-danger d-block" href="<?= site_url('materias/eliminar/' . $item->idmateria) ?>" 
                                 onclick="return confirm('¿Está seguro?')">Eliminar</a>
                         </td>
                     </tr>

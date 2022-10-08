@@ -40,8 +40,8 @@
                         <td><?php echo $item->materia; ?></td>
                         <td><?php echo $item->nombreCompleto; ?></td>
                         <td>
-                            <a href="<?= site_url('grupos/modificar/' . $item->idgrupo) ?>">Modificar</a>
-                            <a href="<?= site_url('grupos/eliminar/' . $item->idgrupo) ?>" 
+                            <a class="btn btn-info d-block" href="<?= site_url('grupos/modificar/' . $item->idgrupo) ?>">Modificar</a>
+                            <a class="btn btn-danger d-block" href="<?= site_url('grupos/eliminar/' . $item->idgrupo) ?>" 
                             onclick="return confirm('¿Está seguro?')">Eliminar</a>
                         </td>
                     </tr>

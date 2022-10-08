@@ -32,8 +32,8 @@
                         <td><?php echo $item->idcarrera; ?></td>
                         <td><?php echo $item->carrera; ?></td>
                         <td>
-                            <a href="<?= site_url('carreras/modificar/' . $item->idcarrera) ?>">Modificar</a>
-                            <a href="<?= site_url('carreras/eliminar/' . $item->idcarrera) ?>" onclick="return confirm('¿Está seguro?')">Eliminar</a>
+                            <a class="btn btn-info d-block" href="<?= site_url('carreras/modificar/' . $item->idcarrera) ?>">Modificar</a>
+                            <a class="btn btn-danger d-block" href="<?= site_url('carreras/eliminar/' . $item->idcarrera) ?>" onclick="return confirm('¿Está seguro?')">Eliminar</a>
                         </td>
                     </tr>
                 <?php endforeach; ?>

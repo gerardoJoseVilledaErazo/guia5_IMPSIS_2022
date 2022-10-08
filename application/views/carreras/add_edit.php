@@ -12,7 +12,7 @@
         <div class="title">
             <div class="row">
                 <div class="offset-md-2 col-md-4 col-sm-12">
-                    <h3><?php echo isset($carrera) ? "Modificar" : "Agregar"; ?></h3>
+                    <h3><?php echo isset($carrera) ? "Modificar Carreras" : "Agregar Carreras"; ?></h3>
                 </div>
             </div>
         </div>
