@@ -73,12 +73,12 @@ class Estudiantes extends CI_Controller
         $this->form_validation->set_rules(
             "nombre", 
             "Nombre", 
-            "required|max_length[100]|alpha_numeric_spaces"
+            "required|max_length[100]"
         );
         $this->form_validation->set_rules(
             "apellido", 
             "Apellido", 
-            "required|max_length[100]|alpha_numeric_spaces"
+            "required|max_length[100]"
         );
         $this->form_validation->set_rules(
             "email", 
@@ -189,12 +189,12 @@ class Estudiantes extends CI_Controller
         $this->form_validation->set_rules(
             "nombre", 
             "Nombre", 
-            "required|max_length[100]|alpha_numeric_spaces"
+            "required|max_length[100]"
         );
         $this->form_validation->set_rules(
             "apellido", 
             "Apellido", 
-            "required|max_length[100]|alpha_numeric_spaces"
+            "required|max_length[100]"
         );
         $this->form_validation->set_rules(
             "email", 
