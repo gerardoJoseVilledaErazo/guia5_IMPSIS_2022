@@ -13,8 +13,6 @@
       crossorigin="anonymous">
     </script>
     <title><?= $title ?></title>
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>guia04_ACCESO_A_DATOS/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>guia04_ACCESO_A_DATOS/css/styles.css">
 </head>
 <body>
 <script src="<?php echo base_url('js/bootstrap.bundle.min.js');?>"></script>
